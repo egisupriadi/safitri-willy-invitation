@@ -7,8 +7,7 @@
     <meta property="og:url" id="meta-url" content="https://ratna-egi-wedding.espectrumnet.site">
     <meta property="og:title" id="meta-title" content="Undangan Pernikahan">
     <meta property="og:description" content="Safitri & Willy">
-    <meta property="og:image"
-        content="https://t3.ftcdn.net/jpg/04/08/78/12/360_F_408781239_SioZtkPoH8lRZuL0MHG4oa2C2IyHJx0c.jpg">
+    <meta property="og:image" content="https://safitri-willy-invitation.vercel.app/assets/img/cover.jpg">
     <title>Safitri &amp; Willy</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
@@ -204,7 +203,8 @@
                                                                                 <div class="">Kepada:</div>
                                                                                 <div class="">Yth. Bapak/Ibu/Saudara/i
                                                                                 </div>
-                                                                                <div class="fw-boldest">Mustika</div>
+                                                                                <div class="fw-boldest nama-tamu">Nama
+                                                                                    Tamu</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -272,7 +272,7 @@
                                                             <div class="">
                                                                 <div class="">Kepada:</div>
                                                                 <div class="">Yth. Bapak/Ibu/Saudara/i</div>
-                                                                <div class="fw-boldest">Mustika</div>
+                                                                <div class="fw-boldest nama-tamu">Nama Tamu</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -424,7 +424,7 @@
                                                                             Navigation
                                                                         </a>
                                                                         <a class="btn btn-sm btn-primary rounded mt-1"
-                                                                            href="https://www.google.com/calendar/event?action=TEMPLATE&amp;text=+Evelyn+Gilmore+%26+Raymond+Chase&amp;details=Hotel+X-More&amp;dates=20251231T010000.0Z/20251231T030000.0Z&amp;location=https://maps.app.goo.gl/tFAW3bMSXDkKt3kk8&amp;trp=false&amp;sprop=&amp;sprop=name:"
+                                                                            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Safitri+%26+Willy&dates=20250504T040000Z/20250504T070000Z&details=Merupakan+kehormatan+bagi+kami+apabila+Bapak/Ibu+berkenan+hadir+dalam+acara+pernikahan+Safitri+%26+Willy.%0A%0A🗺️+Google+Maps:+https://maps.app.goo.gl/qPwU9LNGjDh5XKYs8&location=Gedung+Mutiara,+Jl.+Raya+Cipanas+No.178,+Cimanganten,+Kec.+Tarogong+Kaler,+Kabupaten+Garut,+Jawa+Barat+44151&sf=true&output=xml"
                                                                             target="_blank"><span
                                                                                 class="fas fa-calendar-plus"></span>
                                                                             Save The Date</a>
@@ -472,7 +472,7 @@
                                                                             Navigation
                                                                         </a>
                                                                         <a class="btn btn-sm btn-primary rounded mt-1"
-                                                                            href="https://www.google.com/calendar/event?action=TEMPLATE&amp;text=+Evelyn+Gilmore+%26+Raymond+Chase&amp;details=Hotel+X-More&amp;dates=20251231T040000.0Z/20251231T080000.0Z&amp;location=https://maps.app.goo.gl/tFAW3bMSXDkKt3kk8&amp;trp=false&amp;sprop=&amp;sprop=name:"
+                                                                            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Safitri+%26+Willy&dates=20250504T040000Z/20250504T070000Z&details=Merupakan+kehormatan+bagi+kami+apabila+Bapak/Ibu+berkenan+hadir+dalam+acara+pernikahan+Safitri+%26+Willy.%0A%0A🗺️+Google+Maps:+https://maps.app.goo.gl/qPwU9LNGjDh5XKYs8&location=Gedung+Mutiara,+Jl.+Raya+Cipanas+No.178,+Cimanganten,+Kec.+Tarogong+Kaler,+Kabupaten+Garut,+Jawa+Barat+44151&sf=true&output=xml"
                                                                             target="_blank"><span
                                                                                 class="fas fa-calendar-plus"></span>
                                                                             Save The Date</a>
@@ -988,11 +988,9 @@
                                                             Ucapan & Doa
                                                         </div>
                                                         <form id="myForm">
-                                                            <input type="hidden" name="_token"
-                                                                value="KrHFWTTRFYam0QJi19oMVyUK7dtb4q32D5GrdyNy">
                                                             <div class="mt-5 text-start aos-init" data-aos="fade-up">
-                                                                <input type="text" name="name" placeholder="Your Name"
-                                                                    value="Melissa"
+                                                                <input type="text" id="form-name" name="name"
+                                                                    placeholder="Your Name"
                                                                     class="form-control mb-2 rounded rounded-sm text-primary border rounded border-primary bg-transparent"
                                                                     required="">
                                                                 <textarea type="text" name="ucapan"
@@ -1109,13 +1107,23 @@
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
 <script>
-
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('to') || '';
+    let isPlaying = false;
+    document.querySelectorAll('.nama-tamu').forEach(function (el) {
+        el.textContent = nama;
+    });
+    document.getElementById('form-name').value = nama;
     const song = document.querySelector('#song')
     const btn = document.getElementById("btnMusic");
     const icon = document.getElementById("iconMusic");
+    if (urlParams.has('nama')) {
+        console.log("Parameter 'nama' tersedia!");
+    }
 
     function playAudio() {
         song.volume = 0.5;
+        isPlaying = true;
         song.play();
     }
     document.addEventListener("DOMContentLoaded", function () {
@@ -1140,7 +1148,6 @@
             ));
         });
 
-        let isPlaying = false;
 
         function toggleMusic() {
             if (isPlaying) {
