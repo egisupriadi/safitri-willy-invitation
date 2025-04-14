@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" id="meta-url" content="https://ratna-egi-wedding.espectrumnet.site">
+    <meta property="og:title" id="meta-title" content="Undangan Pernikahan">
+    <meta property="og:description" content="Safitri & Willy">
+    <meta property="og:image"
+        content="https://t3.ftcdn.net/jpg/04/08/78/12/360_F_408781239_SioZtkPoH8lRZuL0MHG4oa2C2IyHJx0c.jpg">
+    <title>Safitri &amp; Willy</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <link href="assets/css/bg-animation.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/animation-keyframes.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tenor+Sans&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arizonia&amp;display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/variable.css">
+    <style>
+        #btnMusic {
+            position: fixed;
+            bottom: 60px;
+            right: 5px;
+            z-index: 999;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        #iconMusic {
+            font-size: 25px;
+            color: var(--bs-primary);
+        }
+    </style>
+</head>
+
+<body id="kt_body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" class="bg-invitation-dark"
+    data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <div class="preloader">
+        <div class="loading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="audio-container">
+        <audio id="song" loop>
+            <source src="assets/audio/audio.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- Tombol Toggle Musik -->
+        <div id="btnMusic">
+            <i id="iconMusic" class="bi bi-volume-up-fill"></i>
+        </div>
+
+    </div>
+    <div class="d-flex flex-column flex-root">
+        <!--begin::Page-->
+        <div class="page d-flex flex-row flex-column-fluid">
+            <!--begin::Wrapper-->
+            <div class="wrapper d-flex flex-column flex-row-fluid px-0" id="kt_wrapper">
+                <!--begin::Content-->
+                <div class="content d-flex flex-column flex-column-fluid p-0" id="kt_content">
+                    <!--begin::Container-->
+                    <div id="kt_content_container" class="container-fluid p-0">
+                        <div class="row justify-content-end m-0 p-0">
+                            <div class="col-md-6 col-lg-8 d-none d-md-block bg-primary">
+                                <div class="row justify-content-start w-100" style="position: fixed; top:50%">
+                                    <div class="col-md-6 col-lg-8">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <div class="text-size-content text-center text-light">
+                                                Undangan Pernikahan
+                                            </div>
+                                            <div class="text-size-title text-center text-light font-title ">
+                                                Safitri &amp; Willy
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                                <li class="firefly"></li>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-0 bg-primary" style="overflow: hidden">
+                                <div class="modal fade" tabindex="-1" id="modalInvitation">
+                                    <div class="modal-dialog modal-fullscreen">
+                                        <div class="modal-content shadow-none">
+                                            <div class="modal-body p-0">
+                                                <div class="row justify-content-end g-0 h-100" style="overflow: hidden">
+                                                    <div class="col-md-6 col-lg-8 d-none d-md-block bg-primary">
+                                                        <div
+                                                            class="h-100 d-flex flex-column justify-content-center align-items-center">
+                                                            <div class="text-size-content text-center text-light">
+                                                                Undangan Pernikahan
+                                                            </div>
+                                                            <div
+                                                                class="text-size-title text-center text-light font-title ">
+                                                                Safitri &amp; Willy
+                                                            </div>
+                                                        </div>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                        <li class="firefly"></li>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 position-relative bg-white">
+                                                        <div class="w-100 h-100" style="top: 0; left: 0;">
+                                                            <div class="h-100 overflow-hidden  text-dark">
+                                                                <div class="text-center d-flex flex-column bg-cover justify-content-between animate__animated animate__zoomIn w-100 h-100"
+                                                                    style="background-image: linear-gradient(to top, rgba(255,255,255,0.1) 70%, rgba(255,255,255,1)), url(assets/img/cover.jpg)">
+                                                                    <div class="pt-10 px-10 flex-grow-1">
+                                                                        <div
+                                                                            class="text-size-content text-black fw-bolder">
+                                                                            Undangan Pernikahan
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="cover-blur-effect flex-grow-0 rounded-top border border-1 border-light border-bottom-0">
+                                                                        <div class="flex-grow-0">
+
+                                                                            <div class="text-center text-black">
+                                                                                <button id="btn-open-invitation"
+                                                                                    type="button"
+                                                                                    data-bs-dismiss="modal"
+                                                                                    class="animate-zoom-in-out btn bg-white text-black rounded btn-sm px-10"
+                                                                                    onclick="playAudio()">
+                                                                                    <i
+                                                                                        class="bi bi-envelope-heart fs-2x text-black"></i>
+                                                                                    Buka Undangan</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex flex-column align-items-center px-10 flex-grow-1">
+                                                                            <div class="py-5 text-black flex-column">
+                                                                                <div
+                                                                                    class="title font-title text-center text-size-title">
+                                                                                    Safitri </div>
+                                                                                <div class="font-title text-center text-size-subtitle"
+                                                                                    style="margin: -20px 0">&amp;
+                                                                                </div>
+                                                                                <div
+                                                                                    class="title font-title text-center text-size-title">
+                                                                                    Willy</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex justify-content-center mb-10">
+                                                                            <div
+                                                                                class="rounded border border-1 border-black py-3 px-5 bg-white">
+                                                                                <div
+                                                                                    class="text-size-caption fw-bolder text-primary mx-2">
+                                                                                    Minggu, 04 Mei 2025
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="flez-grow-0 border-footer border-1 text-black border-light py-5">
+                                                                            <div class="py-2 ">
+                                                                                <div class="">Kepada:</div>
+                                                                                <div class="">Yth. Bapak/Ibu/Saudara/i
+                                                                                </div>
+                                                                                <div class="fw-boldest">Mustika</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <section id="cover">
+                                    <div class="text-primary aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card h-100 overflow-hidden bg-light pb-0 border-radius-0">
+                                            <div class="card-body p-0 h-700px">
+                                                <div class="d-flex flex-column text-center align-items-stretch justify-content-between h-400 bg-cover"
+                                                    style="background-image: linear-gradient(to top, rgba(255,255,255,0.1) 70%, rgba(255,255,255,1)), url(assets/img/cover.jpg)">
+                                                    <img src="assets/img/components/cover-top.png"
+                                                        alt="Wevitation-Decoration" class="w-100">
+                                                    <div class="pt-10 px-10 flex-grow-1 text-black">
+                                                        <div class="text-size-content fw-bolder">
+                                                            Undangan Pernikahan
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="justify-content-center cover-blur-effect flex-grow-0 rounded-top border border-1 border-light border-bottom-0">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center pt-10 px-10 flex-grow-0">
+                                                            <div class="pt-5 text-black">
+                                                                <div class="font-title text-center text-size-title">
+                                                                    Safitri
+                                                                    &amp; Willy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mt-3">
+                                                            <div
+                                                                class="text-size-caption text-black mx-2 ps-3 flex-grow-0">
+                                                                04 Mei 2025
+                                                            </div>
+                                                            <div class="flex-grow-1">
+                                                                <hr style="background-color: black">
+                                                            </div>
+                                                            <div class="countdown-frame p-2 pe-10">
+                                                                <div id="countdown"
+                                                                    class="text-center d-flex justify-content-start ps-2">
+                                                                    <div class=""><span
+                                                                            class="badge badge-circle badge-primary label-countdown text-size-content p-3">267</span><br><small
+                                                                            class="text-size-caption">Days</small></div>
+                                                                    <div><span
+                                                                            class="badge badge-circle badge-primary label-countdown text-size-content p-3">21</span><br><small
+                                                                            class="text-size-caption">Hr</small></div>
+                                                                    <div><span
+                                                                            class="badge badge-circle badge-primary label-countdown text-size-content p-3">23</span><br><small
+                                                                            class="text-size-caption">Min</small></div>
+                                                                    <div><span
+                                                                            class="badge badge-circle badge-primary label-countdown text-size-content p-3">43</span><br><small
+                                                                            class="text-size-caption">Sec</small></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pb-5 text-center mt-10 text-black">
+                                                            <div class="">
+                                                                <div class="">Kepada:</div>
+                                                                <div class="">Yth. Bapak/Ibu/Saudara/i</div>
+                                                                <div class="fw-boldest">Mustika</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div id="quote mt-n1 bg-primary">
+                                    <div class="card bg-primary rounded-0">
+                                        <div class="card-body">
+                                            <div class="text-center text-light aos-init aos-animate" id="message-quote"
+                                                data-aos="fade-up">
+                                                <em>وَالَّذِيْنَ يَقُوْلُوْنَ رَبَّنَا هَبْ لَنَا مِنْ اَزْوَاجِنَا
+                                                    وَذُرِّيّٰتِنَا قُرَّةَ اَعْيُنٍ وَّاجْعَلْنَا لِلْمُتَّقِيْنَ
+                                                    اِمَامًا<br>
+                                                    <br>
+                                                    Dan orang-orang yang berkata, “Ya Tuhan kami, anugerahkanlah kepada
+                                                    kami pasangan kami dan keturunan kami sebagai penyenang hati (kami),
+                                                    dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.</em>
+                                            </div>
+                                            <div class="fw-bold text-light text-center pt-5 aos-init aos-animate"
+                                                data-aos="fade-up">
+                                                Al Furqan: 74
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <section id="detail">
+                                    <div id="bride" class="text-secondary bg-invitation pt-10 pb-5">
+                                        <div class="py-10 px-0">
+                                            <div id="message-opening" class="text-center mb-5 aos-init aos-animate"
+                                                data-aos="fade-up">
+                                                Kami mohon do'a &amp; restunya atas pernikahan kami
+                                            </div>
+                                            <div class="card bg-invitation" id="bride-detail" style="overflow: visible">
+                                                <div class="position-absolute ms-5">
+                                                    <img src="assets/img/components/corner-top-left.png" alt=""
+                                                        srcset="" data-aos="fade-right" class="aos-init">
+                                                </div>
+                                                <div class="position-absolute" style="bottom: 1.25rem; right: 1.25rem">
+                                                    <img src="assets/img/components/corner-bottom-right.png" alt=""
+                                                        srcset="" data-aos="fade-left" class="aos-init">
+                                                </div>
+                                                <div class="card-body py-0 px-15">
+                                                    <div class="my-7 text-start">
+                                                        <div class="frame-bridge-top">
+                                                            <div class="symbol symbol-square symbol-200px mb-5 mt-5 aos-init aos-animate"
+                                                                data-aos="fade-up">
+                                                                <img src="assets/img/bride1.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flex-column-reverse">
+                                                            <div class="fs-4x text-primary text-center aos-init aos-animate"
+                                                                data-aos="fade-up"
+                                                                style="margin: -5rem 0 -6rem 0; font-size:10rem !important; color:#d9d9d9 !important;">
+                                                                &amp;</div>
+                                                            <div>
+                                                                <div class="fw-bolder bride-name text-size-subtitle aos-init aos-animate"
+                                                                    data-aos="fade-up">
+                                                                    Willy Agus Sundari (Willy)
+                                                                </div>
+                                                                <div class="bride-sub text-size-caption aos-init aos-animate"
+                                                                    data-aos="fade-up">
+                                                                    Putra Bungsu dari Bapak Andi Sugandi &amp; Ibu
+                                                                    Sukartini
+                                                                </div>
+                                                                <div class="d-flex-justify-content-center mt-1 aos-init aos-animate"
+                                                                    id="sosmed-1" data-aos="fade-up">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <div class="fw-bolder bride-name text-size-subtitle aos-init"
+                                                                data-aos="fade-up">Safitri Januarista, S.M (Safitri)
+                                                            </div>
+                                                            <div class="bride-sub text-size-caption aos-init"
+                                                                data-aos="fade-up">
+                                                                Putri Bungsu dari Bapak Endang &amp; Ibu Manah
+                                                            </div>
+                                                            <div class="d-flex-justify-content-center mt-1 aos-init"
+                                                                id="sosmed-2" data-aos="fade-up">
+                                                            </div>
+                                                            <div class="frame-bridge-bottom py-10">
+                                                                <div class="symbol symbol-square symbol-200px aos-init"
+                                                                    data-aos="fade-up">
+                                                                    <img src="assets/img/bride2.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="schedule" class="">
+                                        <div class="card bg-light border-radius-0">
+                                            <div class="card-body p-0">
+                                                <div class="">
+                                                    <div class="p-0">
+                                                        <div class="fw-normal font-title text-primary text-size-title text-center px-10 aos-init"
+                                                            data-aos="fade-up">
+                                                            Acara
+                                                        </div>
+                                                        <div class="text-center text-primary pb-5 aos-init"
+                                                            id="message-schedule" data-aos="fade-up">
+                                                            Kami bermaksud untuk mengundang saudara/(i) dalam acara
+                                                            pernikahan kami pada:
+                                                        </div>
+                                                        <div class="pb-10">
+                                                            <div data-aos="fade-right" class="aos-init">
+                                                                <div class="p-5 parallelogram mb-10">
+                                                                    <div class="text-center text-light">
+                                                                        <div
+                                                                            class="d-flex justify-content-center align-items-center text-light">
+                                                                            <div class="flex-grow-1 bg-black"
+                                                                                style="padding: .5px"></div>
+                                                                            <div class="flex-grow-0 px-5">
+                                                                                <i class="bi bi-heart text-light"></i>
+                                                                                <i class="bi bi-heart text-light"></i>
+                                                                                <i class="bi bi-heart text-light"></i>
+                                                                            </div>
+                                                                            <div class="flex-grow-1 bg-black"
+                                                                                style="padding: .5px"></div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="text-light fw-bolder schedule-name text-size-subtitle font-content">
+                                                                            Akad Nikah</div>
+                                                                        <div class="mb-5 d-flex justify-content-center">
+                                                                            <div
+                                                                                class="schedule-date text-size-caption">
+                                                                                Minggu, 04 Mei 2025 <br> 08:00 -
+                                                                                10:00
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="schedule-location text-size-content fw-bolder">
+                                                                            Gedung Mutiara
+                                                                        </div>
+                                                                        <div
+                                                                            class="schedule-address text-size-caption fw-light">
+                                                                            Jl. Raya Cipanas No.178, Cimanganten, Kec.
+                                                                            Tarogong Kaler, Kabupaten Garut, Jawa Barat
+                                                                            44151</div>
+                                                                        <a class="btn btn-sm btn-primary rounded mt-1 bg-alternative"
+                                                                            href="https://maps.app.goo.gl/qPwU9LNGjDh5XKYs8"
+                                                                            target="_blank"><span
+                                                                                class="fas fa-route"></span> Map
+                                                                            Navigation
+                                                                        </a>
+                                                                        <a class="btn btn-sm btn-primary rounded mt-1"
+                                                                            href="https://www.google.com/calendar/event?action=TEMPLATE&amp;text=+Evelyn+Gilmore+%26+Raymond+Chase&amp;details=Hotel+X-More&amp;dates=20251231T010000.0Z/20251231T030000.0Z&amp;location=https://maps.app.goo.gl/tFAW3bMSXDkKt3kk8&amp;trp=false&amp;sprop=&amp;sprop=name:"
+                                                                            target="_blank"><span
+                                                                                class="fas fa-calendar-plus"></span>
+                                                                            Save The Date</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-aos="fade-right" class="aos-init">
+                                                                <div class="p-5 parallelogram mb-10">
+                                                                    <div class="text-center text-light">
+                                                                        <div
+                                                                            class="d-flex justify-content-center align-items-center text-light">
+                                                                            <div class="flex-grow-1 bg-black"
+                                                                                style="padding: .5px"></div>
+                                                                            <div class="flex-grow-0 px-5">
+                                                                                <i class="bi bi-heart text-light"></i>
+                                                                                <i class="bi bi-heart text-light"></i>
+                                                                                <i class="bi bi-heart text-light"></i>
+                                                                            </div>
+                                                                            <div class="flex-grow-1 bg-black"
+                                                                                style="padding: .5px"></div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="text-light fw-bolder schedule-name text-size-subtitle font-content">
+                                                                            Resepsi</div>
+                                                                        <div class="mb-5 d-flex justify-content-center">
+                                                                            <div
+                                                                                class="schedule-date text-size-caption">
+                                                                                Minggu, 04 Mei 2025 <br> 10:00 -
+                                                                                14:00
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="schedule-location text-size-content fw-bolder">
+                                                                            Gedung Mutiara
+                                                                        </div>
+                                                                        <div
+                                                                            class="schedule-address text-size-caption fw-light">
+                                                                            Jl. Raya Cipanas No.178, Cimanganten, Kec.
+                                                                            Tarogong Kaler, Kabupaten Garut, Jawa Barat
+                                                                            44151</div>
+                                                                        <a class="btn btn-sm btn-primary rounded mt-1"
+                                                                            href="https://maps.app.goo.gl/qPwU9LNGjDh5XKYs8"
+                                                                            target="_blank"><span
+                                                                                class="fas fa-route"></span> Map
+                                                                            Navigation
+                                                                        </a>
+                                                                        <a class="btn btn-sm btn-primary rounded mt-1"
+                                                                            href="https://www.google.com/calendar/event?action=TEMPLATE&amp;text=+Evelyn+Gilmore+%26+Raymond+Chase&amp;details=Hotel+X-More&amp;dates=20251231T040000.0Z/20251231T080000.0Z&amp;location=https://maps.app.goo.gl/tFAW3bMSXDkKt3kk8&amp;trp=false&amp;sprop=&amp;sprop=name:"
+                                                                            target="_blank"><span
+                                                                                class="fas fa-calendar-plus"></span>
+                                                                            Save The Date</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="gallery">
+                                    <div class="card bg-light rounded-0 pt-10">
+                                        <div class="card-body px-0">
+                                            <div class="d-flex justify-content-center w-100">
+                                                <img src="assets/img/components/cover-top.png"
+                                                    alt="Wevitation-Decoration" class="w-100 shake-vertical">
+                                            </div>
+                                            <div class="text-center aos-init" data-aos="fade-up">
+                                                <div class="px-0 pt-5">
+                                                    <div class="text-primary fw-bolder font-title fs-3x aos-init aos-animate"
+                                                        data-aos="fade-up">Galeri</div>
+
+                                                    <div class="row mb-15 justify-content-center" id="lightgallery">
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery1.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery1.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url(assets/img/gallery1.jpg)">
+                                                                                <img src="assets/img/gallery1.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery2.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery2.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url('assets/img/gallery2.jpg')">
+                                                                                <img src="assets/img/gallery2.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6 p-0 " data-src="assets/img/gallery3.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery3.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url(assets/img/gallery3.jpg)">
+                                                                                <img src="assets/img/gallery3.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery4.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery4.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url('assets/img/gallery4.jpg')">
+                                                                                <img src="assets/img/gallery4.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery5.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery5.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url(assets/img/gallery5.jpg)">
+                                                                                <img src="assets/img/gallery5.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery6.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery6.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url('assets/img/gallery6.jpg')">
+                                                                                <img src="assets/img/gallery6.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery7.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery7.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url(assets/img/gallery7.jpg)">
+                                                                                <img src="assets/img/gallery7.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 p-0" data-src="assets/img/gallery8.jpg"
+                                                            data-sub-html="">
+                                                            <div class="thumbnail">
+                                                                <div class="card card-custom aos-init aos-animate"
+                                                                    style="overflow: hidden; border-radius:0 !important;"
+                                                                    data-aos="fade-up">
+                                                                    <div class="card-body p-0"
+                                                                        style="border-radius:0 !important;">
+                                                                        <a href="assets/img/gallery8.jpg">
+                                                                            <div class="square-image"
+                                                                                style="background-image: url('assets/img/gallery8.jpg')">
+                                                                                <img src="assets/img/gallery8.jpg"
+                                                                                    alt="" class="content-image rounded"
+                                                                                    style="display:none">
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="gift">
+                                    <div class="text-primary bg-light pb-10 aos-init" data-aos="fade-up">
+                                        <div class="d-flex justify-content-center w-100">
+                                            <img src="assets/img/components/cover-top.png" alt="Decoration"
+                                                class="w-100 shake-vertical">
+                                        </div>
+                                        <div>
+                                            <div class="border-radius-0">
+                                                <div class="px-0">
+                                                    <div class="px-10">
+                                                        <div
+                                                            class="align-items-center d-flex justify-content-center py-2">
+                                                            <div class="font-title text-size-title text-center w-30 aos-init"
+                                                                data-aos="fade-up">
+                                                                Kado
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center text-size-caption aos-init fw-bolder"
+                                                            data-aos="fade-up">
+                                                            Kirim Kado Cashless
+                                                        </div>
+                                                        <div class="text-center row justify-content-center aos-init"
+                                                            data-aos="fade-up">
+                                                            <div class="px-10 mb-5 mt-10">
+                                                                <div class="card card-gift bg-white text-black">
+                                                                    <div class="card-body card-rounded bg-white">
+                                                                        <img src="assets/img/components/bca.svg"
+                                                                            class="mh-15px" alt="" srcset="">
+
+                                                                        <div class="text-center">
+                                                                            <div class="fw-boldest fs-4">Bank BCA</div>
+                                                                            <div class="fs-8 fw-light">Nama Rekening
+                                                                            </div>
+                                                                            <div class="fs-5">Safitri Januarista</div>
+                                                                            <div class="fs-8 fw-light">No Rekening</div>
+                                                                            <div class="fs-5 fw-bold">4460771060</div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="fw-bolder fs-3 mt-10">Kirim Kado Ke Alamat
+                                                                </div>
+                                                                <div class="fs-8 mb-2">
+                                                                    Anda dapat mengirimkan kado dengan alamat berikut:
+                                                                </div>
+                                                                <div
+                                                                    class="rounded-sm bg-white border border-dashed border-primary p-5">
+                                                                    <div class="text-center fs-7 text-black">
+                                                                        Jln.Cimanuk Kp.Babakan Caringin RT/RW 02/05
+                                                                        Kel.Sukagalih Kec.Tarogong
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center px-2"
+                                                    style="margin-top: -40px;">
+                                                    <svg class="shake-vertical" width="113" height="134"
+                                                        viewBox="0 0 113 134" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.7891 12.1703C12.7891 17.2967 9.86914 17.2967 9.86914 22.4231C9.86914 27.5495 12.7891 27.5495 12.7891 32.6759C12.7891 37.8024 9.86914 37.8024 9.86914 42.9288C9.86914 48.0552 12.7891 48.0552 12.7891 53.1816C12.7891 58.308 9.86914 58.308 9.86914 63.4344C9.86914 68.5608 12.7891 68.5608 12.7891 73.6872C12.7891 78.8137 9.86914 78.8137 9.86914 83.9401C9.86914 88.7118 12.3891 89.045 12.7491 93.1827"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M16.4297 22.4232C16.4297 27.5496 19.3497 27.5496 19.3497 32.676C19.3497 37.8025 16.4297 37.8025 16.4297 42.9289C16.4297 48.0553 19.3497 48.0553 19.3497 53.1817C19.3497 58.3081 16.4297 58.3081 16.4297 63.4345C16.4297 68.5609 19.3497 68.5609 19.3497 73.6873C19.3497 78.8137 16.4297 78.8138 16.4297 83.9402C16.4297 88.1101 18.3597 88.8839 19.0797 91.7856"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M12.791 0.885742V9.90264" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M8.74023 5.39966H16.8402" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M10.4707 7.88221L15.1107 2.89551" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M10.4707 2.89551L15.1107 7.88221" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M44.77 90.7969L44.38 90.8184C44.37 90.8184 44.37 90.8184 44.36 90.8184C44.11 90.8184 43.86 90.8399 43.61 90.8506L18.74 91.9038C8.85 92.2692 1 101.007 1 111.657C1 122.308 8.85 131.034 18.75 131.411L43.62 132.464C43.87 132.475 44.12 132.496 44.37 132.496C44.38 132.496 44.38 132.496 44.39 132.496L44.78 132.517V132.485C51.09 132.292 56.14 127.692 56.14 122.017C56.14 116.741 51.75 112.377 46.04 111.657C51.75 110.937 56.14 106.574 56.14 101.297C56.14 95.6331 51.09 91.0333 44.78 90.8291V90.7969H44.77Z"
+                                                            stroke="#7C7D60" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M44.77 90.7969L44.38 90.8184C44.37 90.8184 44.37 90.8184 44.36 90.8184C44.11 90.8184 43.86 90.8399 43.61 90.8506L18.74 91.9038C8.85 92.2692 1 101.007 1 111.657C1 122.308 8.85 131.034 18.75 131.411L43.62 132.464C43.87 132.475 44.12 132.496 44.37 132.496C44.38 132.496 44.38 132.496 44.39 132.496L44.78 132.517V132.485C51.09 132.292 56.14 127.692 56.14 122.017C56.14 116.741 51.75 112.377 46.04 111.657C51.75 110.937 56.14 106.574 56.14 101.297C56.14 95.6331 51.09 91.0333 44.78 90.8291V90.7969H44.77Z"
+                                                            stroke="#7C7D60" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M46.0403 111.657L3.82031 101.136" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M20.8398 91.8071L46.0398 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M49.3491 91.8071L46.0391 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M46.0403 111.657L3.82031 122.168" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M20.8398 131.497L46.0398 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M49.3491 131.497L46.0391 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M1 111.657H46.26" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M36.8809 91.13L46.0409 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M36.8809 132.174L46.0409 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M44.5703 48.2164C44.5703 47.5286 45.0903 46.9697 45.7303 46.9697C46.3703 46.9697 46.8903 47.5286 46.8903 48.2164C46.8903 48.9042 46.3703 49.4631 45.7303 49.4631C45.0803 49.4631 44.5703 48.9042 44.5703 48.2164Z"
+                                                            fill="#7C7D60"></path>
+                                                        <path
+                                                            d="M45.7208 72.7738C45.7208 77.6315 42.8008 77.6315 42.8008 82.4893C42.8008 87.347 45.7208 87.347 45.7208 92.2047C45.7208 97.0625 42.8008 97.0625 42.8008 101.92C42.8008 106.778 45.7208 106.778 45.7208 111.636"
+                                                            stroke="#7C7D60" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M51.1101 63.3163C51.1101 69.2595 45.7201 74.0742 45.7201 74.0742C45.7201 74.0742 40.3301 69.2595 40.3301 63.3163C40.3301 57.3731 45.7201 52.5583 45.7201 52.5583C45.7201 52.5583 51.1101 57.3731 51.1101 63.3163Z"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M45.7207 52.5583V73.7196" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M56.6496 70.5276C52.7396 74.7298 45.7596 74.042 45.7596 74.042C45.7596 74.042 45.1196 66.5404 49.0296 62.3383C52.9396 58.1361 59.9196 58.8239 59.9196 58.8239C59.9196 58.8239 60.5596 66.3255 56.6496 70.5276Z"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M59.92 58.8237L46 73.7838" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M34.7992 70.5276C38.7092 74.7298 45.6892 74.042 45.6892 74.042C45.6892 74.042 46.3292 66.5404 42.4192 62.3383C38.5092 58.1361 31.5292 58.8239 31.5292 58.8239C31.5292 58.8239 30.8892 66.3255 34.7992 70.5276Z"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M31.5293 58.8237L45.4393 73.7838" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <g class="vibrate-1">
+                                                            <path
+                                                                d="M73.2305 91.8071C73.2305 91.1193 73.7505 90.5604 74.3905 90.5604C75.0305 90.5604 75.5505 91.1193 75.5505 91.8071C75.5505 92.4949 75.0305 93.0538 74.3905 93.0538C73.7505 93.0538 73.2305 92.4949 73.2305 91.8071Z"
+                                                                fill="#7C7D60"></path>
+                                                            <path
+                                                                d="M79.5808 106.391C79.5808 112.334 74.1908 117.149 74.1908 117.149C74.1908 117.149 68.8008 112.334 68.8008 106.391C68.8008 100.448 74.1908 95.6331 74.1908 95.6331C74.1908 95.6331 79.5808 100.448 79.5808 106.391Z"
+                                                                stroke="black" stroke-miterlimit="10"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M74.2012 95.6331V116.794" stroke="black"
+                                                                stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                            <path
+                                                                d="M85.1203 113.602C81.2103 117.804 74.2303 117.117 74.2303 117.117C74.2303 117.117 73.5903 109.615 77.5003 105.413C81.4103 101.211 88.3903 101.899 88.3903 101.899C88.3903 101.899 89.0303 109.4 85.1203 113.602Z"
+                                                                stroke="black" stroke-miterlimit="10"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M88.3907 101.898L74.4707 116.859" stroke="black"
+                                                                stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                            <path
+                                                                d="M63.2699 113.602C67.1799 117.804 74.1599 117.117 74.1599 117.117C74.1599 117.117 74.7999 109.615 70.8899 105.413C66.9799 101.211 59.9999 101.899 59.9999 101.899C59.9999 101.899 59.3599 109.4 63.2699 113.602Z"
+                                                                stroke="black" stroke-miterlimit="10"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M60 101.898L73.92 116.859" stroke="black"
+                                                                stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                        </g>
+                                                        <path d="M59.9609 128.251H111.801" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M59.9609 121.91H90.2409" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M96.9609 121.91H109.941" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+
+                                                    <svg class="shake-vertical" width="113" height="134"
+                                                        viewBox="0 0 113 134" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M100.368 12.1703C100.368 17.2967 103.299 17.2967 103.299 22.4231C103.299 27.5495 100.368 27.5495 100.368 32.6759C100.368 37.8024 103.299 37.8024 103.299 42.9288C103.299 48.0552 100.368 48.0552 100.368 53.1816C100.368 58.308 103.299 58.308 103.299 63.4344C103.299 68.5608 100.368 68.5608 100.368 73.6872C100.368 78.8137 103.299 78.8137 103.299 83.9401C103.299 88.7118 100.77 89.045 100.408 93.1827"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M96.7148 22.4232C96.7148 27.5496 93.7844 27.5496 93.7844 32.676C93.7844 37.8025 96.7148 37.8025 96.7148 42.9289C96.7148 48.0553 93.7844 48.0553 93.7844 53.1817C93.7844 58.3081 96.7148 58.3081 96.7148 63.4345C96.7148 68.5609 93.7844 68.5609 93.7844 73.6873C93.7844 78.8137 96.7148 78.8138 96.7148 83.9402C96.7148 88.1101 94.7779 88.8839 94.0553 91.7856"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M100.367 0.885742V9.90264" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M104.432 5.39966H96.3025" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M102.695 7.88221L98.0386 2.89551" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M102.695 2.89551L98.0386 7.88221" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M68.2719 90.7969L68.6633 90.8184C68.6734 90.8184 68.6734 90.8184 68.6834 90.8184C68.9343 90.8184 69.1852 90.8399 69.4361 90.8506L94.3955 91.9038C104.321 92.2692 112.199 101.007 112.199 111.657C112.199 122.308 104.321 131.034 94.3854 131.411L69.4261 132.464C69.1752 132.475 68.9243 132.496 68.6734 132.496C68.6634 132.496 68.6634 132.496 68.6533 132.496L68.2619 132.517V132.485C61.9292 132.292 56.8611 127.692 56.8611 122.017C56.8611 116.741 61.2669 112.377 66.9974 111.657C61.2669 110.937 56.8611 106.574 56.8611 101.297C56.8611 95.6331 61.9292 91.0333 68.2619 90.8291V90.7969H68.2719Z"
+                                                            stroke="#7C7D60" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M68.2719 90.7969L68.6633 90.8184C68.6734 90.8184 68.6734 90.8184 68.6834 90.8184C68.9343 90.8184 69.1852 90.8399 69.4361 90.8506L94.3955 91.9038C104.321 92.2692 112.199 101.007 112.199 111.657C112.199 122.308 104.321 131.034 94.3854 131.411L69.4261 132.464C69.1752 132.475 68.9243 132.496 68.6734 132.496C68.6634 132.496 68.6634 132.496 68.6533 132.496L68.2619 132.517V132.485C61.9292 132.292 56.8611 127.692 56.8611 122.017C56.8611 116.741 61.2669 112.377 66.9974 111.657C61.2669 110.937 56.8611 106.574 56.8611 101.297C56.8611 95.6331 61.9292 91.0333 68.2619 90.8291V90.7969H68.2719Z"
+                                                            stroke="#7C7D60" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M66.9974 111.657L109.369 101.135" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M92.2891 91.8071L66.9985 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M63.6762 91.807L66.998 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M66.9974 111.657L109.369 122.168" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M92.2891 131.497L66.9985 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M63.6762 131.496L66.998 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M112.199 111.657H66.7766" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M76.1895 91.1299L66.9965 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M76.1895 132.173L66.9965 111.657" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M68.4727 48.2164C68.4727 47.5286 67.9508 46.9697 67.3085 46.9697C66.6662 46.9697 66.1443 47.5286 66.1443 48.2164C66.1443 48.9042 66.6662 49.4631 67.3085 49.4631C67.9608 49.4631 68.4727 48.9042 68.4727 48.2164Z"
+                                                            fill="#7C7D60"></path>
+                                                        <path
+                                                            d="M67.3176 72.7738C67.3176 77.6315 70.248 77.6315 70.248 82.4893C70.248 87.347 67.3176 87.347 67.3176 92.2047C67.3176 97.0625 70.248 97.0625 70.248 101.92C70.248 106.778 67.3176 106.778 67.3176 111.636"
+                                                            stroke="#7C7D60" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M61.9078 63.3163C61.9078 69.2595 67.3172 74.0742 67.3172 74.0742C67.3172 74.0742 72.7266 69.2595 72.7266 63.3163C72.7266 57.3731 67.3172 52.5583 67.3172 52.5583C67.3172 52.5583 61.9078 57.3731 61.9078 63.3163Z"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M67.3164 52.5582V73.7195" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M56.3482 70.5276C60.2723 74.7298 67.2773 74.042 67.2773 74.042C67.2773 74.042 67.9196 66.5404 63.9956 62.3383C60.0715 58.1361 53.0665 58.8239 53.0665 58.8239C53.0665 58.8239 52.4242 66.3255 56.3482 70.5276Z"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M53.0651 58.8237L67.0352 73.7838" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path
+                                                            d="M78.2788 70.5276C74.3547 74.7298 67.3497 74.042 67.3497 74.042C67.3497 74.042 66.7074 66.5404 70.6314 62.3383C74.5555 58.1361 81.5605 58.8239 81.5605 58.8239C81.5605 58.8239 82.2028 66.3255 78.2788 70.5276Z"
+                                                            stroke="black" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M81.5605 58.824L67.6006 73.7841" stroke="black"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <g class="vibrate-1-reverse">
+                                                            <path
+                                                                d="M39.709 91.8071C39.709 91.1193 39.1871 90.5604 38.5448 90.5604C37.9025 90.5604 37.3806 91.1193 37.3806 91.8071C37.3806 92.4949 37.9025 93.0538 38.5448 93.0538C39.1871 93.0538 39.709 92.4949 39.709 91.8071Z"
+                                                                fill="#7C7D60"></path>
+                                                            <path
+                                                                d="M33.3356 106.391C33.3356 112.334 38.7449 117.149 38.7449 117.149C38.7449 117.149 44.1543 112.334 44.1543 106.391C44.1543 100.448 38.7449 95.6328 38.7449 95.6328C38.7449 95.6328 33.3356 100.448 33.3356 106.391Z"
+                                                                stroke="black" stroke-miterlimit="10"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M38.7344 95.6327V116.794" stroke="black"
+                                                                stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                            <path
+                                                                d="M27.7779 113.602C31.7019 117.804 38.707 117.117 38.707 117.117C38.707 117.117 39.3493 109.615 35.4253 105.413C31.5012 101.211 24.4962 101.899 24.4962 101.899C24.4962 101.899 23.8538 109.4 27.7779 113.602Z"
+                                                                stroke="black" stroke-miterlimit="10"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M24.4948 101.898L38.4648 116.858" stroke="black"
+                                                                stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                            <path
+                                                                d="M49.7046 113.602C45.7805 117.804 38.7754 117.117 38.7754 117.117C38.7754 117.117 38.1331 109.615 42.0572 105.413C45.9812 101.211 52.9863 101.899 52.9863 101.899C52.9863 101.899 53.6286 109.4 49.7046 113.602Z"
+                                                                stroke="black" stroke-miterlimit="10"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M52.9863 101.898L39.0163 116.859" stroke="black"
+                                                                stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                        </g>
+                                                        <path d="M53.0273 128.251H1.00107" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M53.0273 121.91H22.6385" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M15.8926 121.91H2.86594" stroke="#7C7D60"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="wish">
+                                    <div class="text-center bg-light">
+                                        <div>
+                                            <div class="border-radius-0">
+                                                <div class="p-0 pt-10">
+                                                    <div class="px-10">
+                                                        <div class="fw-normal text-primary font-title text-size-title aos-init"
+                                                            data-aos="fade-up">
+                                                            Ucapan & Doa
+                                                        </div>
+                                                        <form id="myForm">
+                                                            <input type="hidden" name="_token"
+                                                                value="KrHFWTTRFYam0QJi19oMVyUK7dtb4q32D5GrdyNy">
+                                                            <div class="mt-5 text-start aos-init" data-aos="fade-up">
+                                                                <input type="text" name="name" placeholder="Your Name"
+                                                                    value="Melissa"
+                                                                    class="form-control mb-2 rounded rounded-sm text-primary border rounded border-primary bg-transparent"
+                                                                    required="">
+                                                                <textarea type="text" name="ucapan"
+                                                                    class="form-control h-150px rounded rounded-sm text-primary border rounded border-primary bg-transparent"
+                                                                    placeholder="Tulis Ucapan & Doa"
+                                                                    required=""></textarea>
+                                                            </div>
+                                                            <button type="submit"
+                                                                class="btn btn-secondary rounded w-100 mt-2 text-black aos-init"
+                                                                data-aos="fade-up">
+                                                                <i class="bi bi-chat-heart fs-2x"></i>
+                                                                Kirim Ucapan
+                                                            </button>
+                                                        </form>
+                                                        <div id="ucapan" class="py-3 mt-2 scroll mh-500px aos-init"
+                                                            data-aos="fade-up">
+                                                        </div>
+                                                    </div>
+                                                    <img src="assets/img/components/single.png" alt="" srcset=""
+                                                        data-aos="fade-up" class="aos-init">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div id="closing" class="text-center pb-0 bg-light">
+                                    <div class="card bg-light rounded-0">
+                                        <div class="card-body pt-0 pb-5 px-0">
+                                            <div class="px-10">
+
+                                                <div id="message-closing" class="pt-10">Atas kehadiran saudara/(i) &amp;
+                                                    Do'a restunya, kami ucapkan terimakasih</div>
+                                                <div id="closing-thanks" class="pt-10">Hormat Kami</div>
+                                                <div id="closing-title" class="fw-bolder">
+                                                    <div>Safitri &amp; Willy</div>
+                                                </div>
+                                                <div id="closing-also_invited_by" class="mt-5">Turut Mengundang:</div>
+                                                <div id="closing-invited_by" class="fw-bolder">Keluarga Besar Kedua
+                                                    Mempelai</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center pt-10" id="footer">
+                                    <div class=" mb-20 text-light">
+                                        <span class="fw-bolder" id="footer-title">Safitri &amp; Willy
+                                            E-Invitation</span><br>
+                                        Made with <span class="heart">❤</span> somewhere in the world<br>
+                                        <span class="fw-light">Powered by</span><br>
+                                        <span class="text-light fw-light">Mustika Invitation
+                                        </span>
+                                        | <span class="text-light fw-light">Credit &amp; Support</span>
+                                    </div>
+                                </div>
+                                <div class="pb-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-light pb-0 justify-content-center">
+        <div class="row justify-content-end w-100">
+            <div class="col-md-6 col-lg-4 p-0 d-flex justify-content-center" style="overflow: hidden">
+                <div class="bg-navigation  p-2 d-flex shadow justify-content-center text-center">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#cover">
+                                <span class="bi bi-file-earmark-text fs-3"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#detail">
+                                <span class="bi bi-heart fs-3"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">
+                                <span class="bi bi-images fs-3"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gift">
+                                <span class="bi bi-gift fs-3"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#wish">
+                                <span class="bi bi-chat-quote fs-3"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- LightGallery JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+
+<!-- Plugin (optional): thumbnail, zoom, dll -->
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
+<script>
+
+    const song = document.querySelector('#song')
+    const btn = document.getElementById("btnMusic");
+    const icon = document.getElementById("iconMusic");
+
+    function playAudio() {
+        song.volume = 0.5;
+        song.play();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        dayjs.extend(dayjs_plugin_utc);
+        dayjs.extend(dayjs_plugin_timezone);
+        AOS.init({
+            duration: 1000
+        });
+        $('#modalInvitation').modal({ backdrop: 'static', keyboard: false });
+        $('#modalInvitation').modal('show');
+        window.setTimeout(function () {
+            $(".preloader").fadeOut("slow");
+        }, 5000);
+
+        var time = "2025-05-04 08:00:00";
+        $('#countdown').countdown(time, function (event) {
+            var $this = $(this).html(event.strftime('' +
+                '<div class=""><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%D</span><br><small class="text-size-caption">Days</small></div>' +
+                '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%H</span><br><small class="text-size-caption">Hr</small></div>' +
+                '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%M</span><br><small class="text-size-caption">Min</small></div>' +
+                '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%S</span><br><small class="text-size-caption">Sec</small></div>'
+            ));
+        });
+
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                song.pause();
+                icon.classList.remove("bi-volume-up-fill");
+                icon.classList.add("bi-volume-mute-fill");
+            } else {
+                song.play();
+                icon.classList.remove("bi-volume-mute-fill");
+                icon.classList.add("bi-volume-up-fill");
+            }
+            isPlaying = !isPlaying;
+        }
+
+        btn.addEventListener("click", toggleMusic);
+
+        const sections = $("section");
+        const navLinks = $(".nav-link");
+
+        $(window).on("scroll", function () {
+            let currentPosition = $(this).scrollTop() + 100; // tambahkan offset untuk kompensasi tinggi navbar
+
+            sections.each(function () {
+                const top = $(this).offset().top;
+                const bottom = top + $(this).outerHeight();
+                const id = $(this).attr("id");
+
+                if (currentPosition >= top && currentPosition < bottom) {
+                    navLinks.removeClass("active");
+                    $(`.nav-link[href="#${id}"]`).addClass("active");
+                }
+            });
+        });
+        lightGallery(document.getElementById('lightgallery'), {
+            download: false,
+            zoom: false,
+            fullScreen: false,
+            share: false,
+            rotate: false,
+            autoplayControls: false,
+        });
+    });
+</script>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const formData = {
+            Nama: this.name.value,
+            Ucapan: this.ucapan.value
+        };
+        $('#ucapan').prepend(`
+         <div class="rounded rounded-sm text-light p-3 mb-2 bg-primary">
+            <div class="fw-bold text-start">${formData.Nama}</div>
+            <div class="fw-light fs-9 mb-1 text-start"><span
+                    class="bi bi-clock-history me-1"></span>${dayjs().tz("Asia/Jakarta").format("dddd, DD MMMM YYYY HH:mm:ss")}
+            </div>
+            <div class="fs-7 text-start">${formData.Ucapan}</div>
+        </div>
+        `);
+        fetch('https://script.google.com/macros/s/AKfycbz3CAqrzl8Ei04QR57RGSLT-hrA87Kvi25OCL13vPQYnIwlRO7MSSEMdv8hbENxRDtVqA/exec', {
+            method: 'POST',
+            body: JSON.stringify(formData),
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                // alert("Data submitted!");
+                console.log("RESPONSE", JSON.stringify(data))
+                this.reset();
+            })
+            .catch(err => {
+                // alert("Error submitting form");
+                console.error(err);
+            });
+    });
+</script>
+<script>
+    fetch('https://script.google.com/macros/s/AKfycbz3CAqrzl8Ei04QR57RGSLT-hrA87Kvi25OCL13vPQYnIwlRO7MSSEMdv8hbENxRDtVqA/exec')
+        .then(res => res.json())
+        .then(data => {
+            $("#ucapan").html(data.reverse().map(item => (`
+            <div class="rounded rounded-sm text-light p-3 mb-2 bg-primary">
+                                                            <div class="fw-bold text-start">${item.Nama}</div>
+                                                            <div class="fw-light fs-9 mb-1 text-start"><span
+                                                                    class="bi bi-clock-history me-1"></span>${dayjs(item.Waktu).tz("Asia/Jakarta").format("dddd, DD MMMM YYYY HH:mm:ss")}
+                                                            </div>
+                                                            <div class="fs-7 text-start">${item.Ucapan}</div>
+                                                        </div>`)).join(''))
+        });
+</script>
+
+</html>

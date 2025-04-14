@@ -1,0 +1,24 @@
+:root {
+    --transition-counter-bg: #FF871F;
+    --counter-bg: #DA6500;
+    --counter-color: #000000;
+    --counter-radius: 5px;
+    --counter-line-bg: #FF871F;
+    --counter-line-size: 0.1px;
+    --invitation-bg: #ffffff;
+    --invitation-bg-light: #F5F8FF;
+    --text-primary: #544641;
+    --text-primary-hover: #E7DFCD;
+    --text-secondary: #864A25;
+    --bs-primary: #B69574;
+    --bs-primary-hover: #53543e;
+    --bg-primary: #B69574;
+    --bg-primary-dark: #414230;
+    --bs-primary-light: #feffdc;
+    --bg-secondary: #472828;
+    --bs-secondary: #472828;
+    --bs-secondary-hover: #35583F;
+    --bs-secondary-light: #077004;
+    --bs-text-light: #FFFFFF;
+    --bs-alternative: #ece6c2;
+}
