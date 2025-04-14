@@ -58,6 +58,13 @@
             color: var(--bs-primary);
         }
     </style>
+    <style>
+        .custom-collapse {
+            overflow: hidden;
+            transition: height 1.5s ease, opacity 1.5s ease;
+        }
+    </style>
+
 </head>
 
 <body id="kt_body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" class="bg-invitation-dark"
@@ -685,40 +692,59 @@
                                                                 Kado
                                                             </div>
                                                         </div>
-                                                        <div class="text-center text-size-caption aos-init fw-bolder"
+                                                        <div class="text-center text-size-caption aos-init fw-bolder mb-5"
                                                             data-aos="fade-up">
-                                                            Kirim Kado Cashless
+                                                            Doa restu anda merupakan karunia yang sangat berarti bagi
+                                                            kami. Jika memberi adalah ungkapan tanda kasih, anda dapat
+                                                            memberi kado secara cashless.
                                                         </div>
-                                                        <div class="text-center row justify-content-center aos-init"
+                                                        <div class="d-flex justify-content-center aos-init"
                                                             data-aos="fade-up">
-                                                            <div class="px-10 mb-5 mt-10">
-                                                                <div class="card card-gift bg-white text-black">
-                                                                    <div class="card-body card-rounded bg-white">
-                                                                        <img src="assets/img/components/bca.svg"
-                                                                            class="mh-15px" alt="" srcset="">
+                                                            <button type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#rekeningCollapse" aria-expanded="false"
+                                                                aria-controls="rekeningCollapse"
+                                                                class="animate-zoom-in-out btn bg-white text-black rounded btn-sm px-10">
+                                                                <i class="bi bi-gift fs-2x text-black"></i>
+                                                                Kirim Hadiah</button>
+                                                        </div>
+                                                        <div class="collapse custom-collapse" id="rekeningCollapse">
+                                                            <div class="text-center row justify-content-center aos-init"
+                                                                data-aos="fade-up">
+                                                                <div class="px-10 mb-5 mt-10">
+                                                                    <div class="card card-gift bg-white text-black">
+                                                                        <div class="card-body card-rounded bg-white">
+                                                                            <img src="assets/img/components/bca.svg"
+                                                                                class="mh-15px" alt="" srcset="">
 
-                                                                        <div class="text-center">
-                                                                            <div class="fw-boldest fs-4">Bank BCA</div>
-                                                                            <div class="fs-8 fw-light">Nama Rekening
+                                                                            <div class="text-center">
+                                                                                <div class="fw-boldest fs-4">Bank BCA
+                                                                                </div>
+                                                                                <div class="fs-8 fw-light">Nama Rekening
+                                                                                </div>
+                                                                                <div class="fs-5">Safitri Januarista
+                                                                                </div>
+                                                                                <div class="fs-8 fw-light">No Rekening
+                                                                                </div>
+                                                                                <div class="fs-5 fw-bold">4460771060
+                                                                                </div>
                                                                             </div>
-                                                                            <div class="fs-5">Safitri Januarista</div>
-                                                                            <div class="fs-8 fw-light">No Rekening</div>
-                                                                            <div class="fs-5 fw-bold">4460771060</div>
+
                                                                         </div>
-
                                                                     </div>
-                                                                </div>
 
-                                                                <div class="fw-bolder fs-3 mt-10">Kirim Kado Ke Alamat
-                                                                </div>
-                                                                <div class="fs-8 mb-2">
-                                                                    Anda dapat mengirimkan kado dengan alamat berikut:
-                                                                </div>
-                                                                <div
-                                                                    class="rounded-sm bg-white border border-dashed border-primary p-5">
-                                                                    <div class="text-center fs-7 text-black">
-                                                                        Jln.Cimanuk Kp.Babakan Caringin RT/RW 02/05
-                                                                        Kel.Sukagalih Kec.Tarogong
+                                                                    <div class="fw-bolder fs-3 mt-10">Kirim Kado Ke
+                                                                        Alamat
+                                                                    </div>
+                                                                    <div class="fs-8 mb-2">
+                                                                        Anda dapat mengirimkan kado dengan alamat
+                                                                        berikut:
+                                                                    </div>
+                                                                    <div
+                                                                        class="rounded-sm bg-white border border-dashed border-primary p-5">
+                                                                        <div class="text-center fs-7 text-black">
+                                                                            Jln.Cimanuk Kp.Babakan Caringin RT/RW 02/05
+                                                                            Kel.Sukagalih Kec.Tarogong
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1046,6 +1072,7 @@
                                     </div>
                                 </div>
                                 <div class="pb-2"></div>
+
                             </div>
                         </div>
                     </div>
@@ -1053,7 +1080,6 @@
             </div>
         </div>
     </div>
-
     <nav id="navbar" class="navbar navbar-light pb-0 justify-content-center">
         <div class="row justify-content-end w-100">
             <div class="col-md-6 col-lg-4 p-0 d-flex justify-content-center" style="overflow: hidden">
@@ -1241,6 +1267,31 @@
                                                             <div class="fs-7 text-start">${item.Ucapan}</div>
                                                         </div>`)).join(''))
         });
+</script>
+
+<script>
+    const collapseEl = document.getElementById('rekeningCollapse');
+    const bsCollapse = new bootstrap.Collapse(collapseEl, { toggle: false });
+
+    collapseEl.addEventListener('show.bs.collapse', function () {
+        collapseEl.style.height = '0px';
+        collapseEl.style.opacity = '0';
+        setTimeout(() => {
+            collapseEl.style.height = collapseEl.scrollHeight + 'px';
+            collapseEl.style.opacity = '1';
+        }, 10);
+    });
+
+    collapseEl.addEventListener('shown.bs.collapse', function () {
+        collapseEl.style.height = 'auto';
+    });
+
+    collapseEl.addEventListener('hide.bs.collapse', function () {
+        collapseEl.style.height = collapseEl.scrollHeight + 'px';
+        collapseEl.offsetHeight; // force repaint
+        collapseEl.style.height = '0px';
+        collapseEl.style.opacity = '0';
+    });
 </script>
 
 </html>
